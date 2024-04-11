@@ -1,0 +1,48 @@
+body{background: #111;}
+
+.container{
+    padding: 1em;
+    column-count: 4;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media(max-width: 800px){
+    .container{
+        column-count: 3;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        column-count: 2;
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        column-count: 1;
+    }
+}
+
+
+
+ /*--------custom scrollbar--------*/
+ ::-webkit-scrollbar{
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track{
+      background: #d1e5ff;
+  }
+
+  ::-webkit-scrollbar-thumb{
+     background: linear-gradient(#01ff38,#f7f2f4,#ff9900);  
+     border-radius: 10px;
+  }
+
+
+  
